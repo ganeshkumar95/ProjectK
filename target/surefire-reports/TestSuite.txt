@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 242.671 s <<< FAILURE! - in TestSuite
+validateBrokenLinksImg(com.ProjectK.qa.TestCases.BrokenLinkImagesTest)  Time elapsed: 32.097 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'ganesh', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c657f88cec75178f8219ce6f280b1bc, clickElement {id=58500fff-a22f-4181-bfd5-0ce3be7ffa00}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.iO2Cnd}, goog:chromeOptions: {debuggerAddress: localhost:46679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46679/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (5c657f88cec75178f8219ce6f280b1bc)] -> xpath: //*[@id="app"]/div/div/div[2]/div[2]/div[2]/a[1]]
+Session ID: 5c657f88cec75178f8219ce6f280b1bc
+	at com.ProjectK.qa.TestCases.BrokenLinkImagesTest.validateBrokenLinksImg(BrokenLinkImagesTest.java:28)
+
