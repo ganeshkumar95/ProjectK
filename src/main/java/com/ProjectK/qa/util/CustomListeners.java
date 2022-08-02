@@ -2,6 +2,7 @@ package com.ProjectK.qa.util;
 
 import java.io.IOException;
 
+import org.apache.commons.lang.exception.ExceptionUtils;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -38,6 +39,26 @@ public class CustomListeners extends TestBase implements ITestListener{
 //	belongs to ITestResults and will execute if failure of fsp test execution
 	public void onTestFailure(ITestResult arg0) {
 		System.out.println("failure of ProjectK Test Cases Execution...." + arg0.getName());
+		boolean islogIssue = arg0.getMethod().getConstructorOrMethod().getMethod().getAnnotation(JiraCreateIssue.class).isCreateIssue();
+        if (islogIssue) {
+
+		//Provide proper Jira project URL ex: https://browsertack.atlassian.net 
+		
+		//Jira User name ex: browserstack@gmail.com
+		
+		//API token copy from Jira dashboard ex: lorelimpusm12uijk
+		
+		//Project key should be, Short name ex: BS	
+
+         JiraServiceProvider JiraServiceProvider = new JiraServiceProvider("https://testmanagement.atlassian.net/",
+                    "ganesh.poojary011@gmail.com", "fbaivSbtrc4P0SVdlDcIB719", "TES");
+         String issueDescription = "Failure Reason from Automation Testing\n\n" + arg0.getThrowable().getMessage()+ "\n";
+         issueDescription.concat(ExceptionUtils.getFullStackTrace(arg0.getThrowable()));
+         String issueSummary = arg0.getMethod().getConstructorOrMethod().getMethod().getName()
+
+                    + " Failed in Automation Testing";
+        JiraServiceProvider.createJiraIssue("Bug", issueSummary, issueDescription, "Automated Testing");
+	}
 	}
 public void onTestFailedButWithinSuccesspercentage(ITestResult arg0) {
 	System.out.println("failure of ProjectK Test Cases Execution...." + arg0.getName());

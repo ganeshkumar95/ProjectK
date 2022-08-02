@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import com.ProjectK.qa.base.TestBase;
 import com.ProjectK.qa.pages.HyperLinks;
+import com.ProjectK.qa.util.JiraCreateIssue;
 
 public class LinksTest extends TestBase{
 
@@ -21,6 +22,7 @@ public class LinksTest extends TestBase{
 		link = new HyperLinks();
 	}
 	
+	@JiraCreateIssue(isCreateIssue = true)
 	@Test
 	public void validateLinksTest() throws InterruptedException {
 		link.validateLinksBtn();

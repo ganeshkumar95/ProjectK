@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import com.ProjectK.qa.base.TestBase;
 import com.ProjectK.qa.pages.Buttons;
+import com.ProjectK.qa.util.JiraCreateIssue;
 
 public class ButtonsTest extends TestBase{
 
@@ -20,6 +21,7 @@ public class ButtonsTest extends TestBase{
 		btn = new Buttons();
 	}
 	
+	@JiraCreateIssue(isCreateIssue = true)
 	@Test
 	public void validateButtonsTest() throws InterruptedException {
 		btn.validateButtonOption();

@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import com.ProjectK.qa.base.TestBase;
 import com.ProjectK.qa.pages.UploadDownload;
+import com.ProjectK.qa.util.JiraCreateIssue;
 
 public class UploadDownloadTest extends TestBase{
 
@@ -21,6 +22,7 @@ public class UploadDownloadTest extends TestBase{
 		uploadDownload = new UploadDownload();
 	}
 	
+	@JiraCreateIssue(isCreateIssue = true)
 	@Test
 	public void validateUploadDownloadTest() throws InterruptedException {
 		uploadDownload.validateUploadDownloadOption();

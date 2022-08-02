@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import com.ProjectK.qa.base.TestBase;
 import com.ProjectK.qa.pages.TextBox;
+import com.ProjectK.qa.util.JiraCreateIssue;
 import com.ProjectK.qa.util.TestUtil;
 
 public class TextBoxTest extends TestBase{
@@ -30,6 +31,7 @@ public class TextBoxTest extends TestBase{
 		textBox = new TextBox();
 	}
 	
+	@JiraCreateIssue(isCreateIssue = true)
 	@Test(priority = 1)
 	public void validateTextBoxButtonTest() throws InterruptedException {
 		textBox.validateTextBoxBtn();

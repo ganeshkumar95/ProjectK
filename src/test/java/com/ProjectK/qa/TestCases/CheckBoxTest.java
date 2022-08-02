@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import com.ProjectK.qa.base.TestBase;
 import com.ProjectK.qa.pages.CheckBox;
+import com.ProjectK.qa.util.JiraCreateIssue;
 
 public class CheckBoxTest extends TestBase{
 
@@ -20,6 +21,7 @@ public class CheckBoxTest extends TestBase{
 		checkBox = new CheckBox();
 	}
 	
+	@JiraCreateIssue(isCreateIssue = true)
 	@Test(priority = 1)
 	public void validateCheckBoxButtonTest() throws InterruptedException {
 		checkBox.validateCheckBoxBtn();

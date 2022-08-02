@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-skipped">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
+                    <span class="method-stats">13 methods,  5 skipped,  8 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
+                    <div class="method-list-content skipped suite-Surefire_suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.BrokenLinkImagesTest" class="method navigator-link" hash-for-method="validateBrokenLinksImg">validateBrokenLinksImg</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.ButtonsTest" class="method navigator-link" hash-for-method="validateButtonsTest">validateButtonsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.LinksTest" class="method navigator-link" hash-for-method="validateLinksTest">validateLinksTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.RadioButtonTest" class="method navigator-link" hash-for-method="validateRadioButtonTest">validateRadioButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.WebTablesTest" class="method navigator-link" hash-for-method="validateWebTablesButtonTest">validateWebTablesButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,17 +137,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.TextBoxTest" class="method navigator-link" hash-for-method="dataDriventextBoxButtonTest(Vipul, vipul@gmail.com, dsdsd, ggfs)">dataDriventextBoxButtonTest(Vipul, vipul@gmail.com, dsdsd, ggfs)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.TextBoxTest" class="method navigator-link" hash-for-method="dataDriventextBoxButtonTest(Ganesh, ganesh@gmail.com, abc, fefe)">dataDriventextBoxButtonTest(Ganesh, ganesh@gmail.com, abc, fefe)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.TextBoxTest" class="method navigator-link" hash-for-method="dataDriventextBoxButtonTest(Kajal, kajal@gmail.com, hhdjnsd, opiqm)">dataDriventextBoxButtonTest(Kajal, kajal@gmail.com, hhdjnsd, opiqm)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,7 +147,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.ButtonsTest" class="method navigator-link" hash-for-method="validateButtonsTest">validateButtonsTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.TextBoxTest" class="method navigator-link" hash-for-method="dataDriventextBoxButtonTest(Kajal, kajal@gmail.com, hhdjnsd, opiqm)">dataDriventextBoxButtonTest(Kajal, kajal@gmail.com, hhdjnsd, opiqm)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.TextBoxTest" class="method navigator-link" hash-for-method="dataDriventextBoxButtonTest(Vipul, vipul@gmail.com, dsdsd, ggfs)">dataDriventextBoxButtonTest(Vipul, vipul@gmail.com, dsdsd, ggfs)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -147,22 +162,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.LinksTest" class="method navigator-link" hash-for-method="validateLinksTest">validateLinksTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.RadioButtonTest" class="method navigator-link" hash-for-method="validateRadioButtonTest">validateRadioButtonTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.TextBoxTest" class="method navigator-link" hash-for-method="validateTextBoxButtonTest">validateTextBoxButtonTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.UploadDownloadTest" class="method navigator-link" hash-for-method="validateUploadDownloadTest">validateUploadDownloadTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -172,7 +172,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.WebTablesTest" class="method navigator-link" hash-for-method="validateWebTablesButtonTest">validateWebTablesButtonTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.ProjectK.qa.TestCases.UploadDownloadTest" class="method navigator-link" hash-for-method="validateUploadDownloadTest">validateUploadDownloadTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -187,49 +187,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
+          <div class="suite-Surefire_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.ProjectK.qa.TestCases.BrokenLinkImagesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateBrokenLinksImg">
-                  </a> <!-- validateBrokenLinksImg -->
-                  <span class="method-name">validateBrokenLinksImg</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 30.000
-  (Session info: chrome=102.0.5005.115)
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;ganesh&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;11.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5c657f88cec75178f8219ce6f280b1bc, clickElement {id=58500fff-a22f-4181-bfd5-0ce3be7ffa00}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.iO2Cnd}, goog:chromeOptions: {debuggerAddress: localhost:46679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46679/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (5c657f88cec75178f8219ce6f280b1bc)] -&gt; xpath: //*[@id=&quot;app&quot;]/div/div/div[2]/div[2]/div[2]/a[1]]
-Session ID: 5c657f88cec75178f8219ce6f280b1bc
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy17.click(Unknown Source)
-	at com.ProjectK.qa.pages.BrokenLinkImages.validateWorkingLink(BrokenLinkImages.java:31)
-	at com.ProjectK.qa.TestCases.BrokenLinkImagesTest.validateBrokenLinksImg(BrokenLinkImagesTest.java:28)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 39 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.ProjectK.qa.TestCases.RadioButtonTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -238,13 +198,34 @@ Session ID: 5c657f88cec75178f8219ce6f280b1bc
                   <a name="validateRadioButtonTest">
                   </a> <!-- validateRadioButtonTest -->
                   <span class="method-name">validateRadioButtonTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;ganesh&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [140d3f6095aeb07e9c16fb79dfb96ff8, get {url=https://demoqa.com/elements}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.AJQDKH}, goog:chromeOptions: {debuggerAddress: localhost:33125}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33125/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 140d3f6095aeb07e9c16fb79dfb96ff8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at com.ProjectK.qa.base.TestBase.initialization(TestBase.java:62)
+	at com.ProjectK.qa.TestCases.RadioButtonTest.setUp(RadioButtonTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.ProjectK.qa.TestCases.ButtonsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -253,13 +234,34 @@ Session ID: 5c657f88cec75178f8219ce6f280b1bc
                   <a name="validateButtonsTest">
                   </a> <!-- validateButtonsTest -->
                   <span class="method-name">validateButtonsTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 29.240
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;ganesh&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d97e9ad6e27dbbdf6cb748c547b5f0c, get {url=https://demoqa.com/elements}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.tjh6ee}, goog:chromeOptions: {debuggerAddress: localhost:37557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37557/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d97e9ad6e27dbbdf6cb748c547b5f0c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at com.ProjectK.qa.base.TestBase.initialization(TestBase.java:62)
+	at com.ProjectK.qa.TestCases.ButtonsTest.setUp(ButtonsTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.ProjectK.qa.TestCases.WebTablesTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -268,10 +270,103 @@ Session ID: 5c657f88cec75178f8219ce6f280b1bc
                   <a name="validateWebTablesButtonTest">
                   </a> <!-- validateWebTablesButtonTest -->
                   <span class="method-name">validateWebTablesButtonTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 3.925
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;ganesh&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0c37c77874f90b33696f55793c68c92f, get {url=https://demoqa.com/elements}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.FqmlkU}, goog:chromeOptions: {debuggerAddress: localhost:32905}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:32905/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c37c77874f90b33696f55793c68c92f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at com.ProjectK.qa.base.TestBase.initialization(TestBase.java:62)
+	at com.ProjectK.qa.TestCases.WebTablesTest.setUp(WebTablesTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.ProjectK.qa.TestCases.LinksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLinksTest">
+                  </a> <!-- validateLinksTest -->
+                  <span class="method-name">validateLinksTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.610
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;ganesh&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9855b50338d6d7c006cd43587abfeac1, get {url=https://demoqa.com/elements}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.ChQXUe}, goog:chromeOptions: {debuggerAddress: localhost:36143}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36143/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9855b50338d6d7c006cd43587abfeac1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at com.ProjectK.qa.base.TestBase.initialization(TestBase.java:62)
+	at com.ProjectK.qa.TestCases.LinksTest.setUp(LinksTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.ProjectK.qa.TestCases.BrokenLinkImagesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateBrokenLinksImg">
+                  </a> <!-- validateBrokenLinksImg -->
+                  <span class="method-name">validateBrokenLinksImg</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 29.152
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;ganesh&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [32d0db6d69ecdaff175c3155e70ff970, get {url=https://demoqa.com/elements}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.0wPr4G}, goog:chromeOptions: {debuggerAddress: localhost:41043}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41043/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 32d0db6d69ecdaff175c3155e70ff970
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at com.ProjectK.qa.base.TestBase.initialization(TestBase.java:62)
+	at com.ProjectK.qa.TestCases.BrokenLinkImagesTest.setUp(BrokenLinkImagesTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -295,18 +390,18 @@ Session ID: 5c657f88cec75178f8219ce6f280b1bc
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="dataDriventextBoxButtonTest(Vipul, vipul@gmail.com, dsdsd, ggfs)">
-                  </a> <!-- dataDriventextBoxButtonTest(Vipul, vipul@gmail.com, dsdsd, ggfs) -->
-                  <span class="method-name">dataDriventextBoxButtonTest</span>
-                  <span class="parameters">(Vipul,vipul@gmail.com,dsdsd,ggfs)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="dataDriventextBoxButtonTest(Ganesh, ganesh@gmail.com, abc, fefe)">
                   </a> <!-- dataDriventextBoxButtonTest(Ganesh, ganesh@gmail.com, abc, fefe) -->
                   <span class="method-name">dataDriventextBoxButtonTest</span>
                   <span class="parameters">(Ganesh,ganesh@gmail.com,abc,fefe)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataDriventextBoxButtonTest(Tester1, Tester1@gmail.com, dddjeid, lqsms)">
+                  </a> <!-- dataDriventextBoxButtonTest(Tester1, Tester1@gmail.com, dddjeid, lqsms) -->
+                  <span class="method-name">dataDriventextBoxButtonTest</span>
+                  <span class="parameters">(Tester1,Tester1@gmail.com,dddjeid,lqsms)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -319,10 +414,10 @@ Session ID: 5c657f88cec75178f8219ce6f280b1bc
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="dataDriventextBoxButtonTest(Tester1, Tester1@gmail.com, dddjeid, lqsms)">
-                  </a> <!-- dataDriventextBoxButtonTest(Tester1, Tester1@gmail.com, dddjeid, lqsms) -->
+                  <a name="dataDriventextBoxButtonTest(Vipul, vipul@gmail.com, dsdsd, ggfs)">
+                  </a> <!-- dataDriventextBoxButtonTest(Vipul, vipul@gmail.com, dsdsd, ggfs) -->
                   <span class="method-name">dataDriventextBoxButtonTest</span>
-                  <span class="parameters">(Tester1,Tester1@gmail.com,dddjeid,lqsms)</span>
+                  <span class="parameters">(Vipul,vipul@gmail.com,dsdsd,ggfs)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -360,21 +455,6 @@ Session ID: 5c657f88cec75178f8219ce6f280b1bc
                   <a name="validateUploadDownloadTest">
                   </a> <!-- validateUploadDownloadTest -->
                   <span class="method-name">validateUploadDownloadTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.ProjectK.qa.TestCases.LinksTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateLinksTest">
-                  </a> <!-- validateLinksTest -->
-                  <span class="method-name">validateLinksTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -440,62 +520,62 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateLinksTest')
-data.setCell(0, 2, 'com.ProjectK.qa.TestCases.LinksTest')
-data.setCell(0, 3, 55560);
+data.setCell(0, 1, 'validateCheckBoxButtonTest')
+data.setCell(0, 2, 'com.ProjectK.qa.TestCases.CheckBoxTest')
+data.setCell(0, 3, 12317);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateBrokenLinksImg')
-data.setCell(1, 2, 'com.ProjectK.qa.TestCases.BrokenLinkImagesTest')
-data.setCell(1, 3, 32090);
+data.setCell(1, 1, 'validateUploadDownloadTest')
+data.setCell(1, 2, 'com.ProjectK.qa.TestCases.DynamicPropertiesTest')
+data.setCell(1, 3, 11076);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateWebTablesButtonTest')
-data.setCell(2, 2, 'com.ProjectK.qa.TestCases.WebTablesTest')
-data.setCell(2, 3, 17828);
+data.setCell(2, 1, 'validateUploadDownloadTest')
+data.setCell(2, 2, 'com.ProjectK.qa.TestCases.UploadDownloadTest')
+data.setCell(2, 3, 9159);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateCheckBoxButtonTest')
-data.setCell(3, 2, 'com.ProjectK.qa.TestCases.CheckBoxTest')
-data.setCell(3, 3, 12255);
+data.setCell(3, 1, 'validateTextBoxButtonTest')
+data.setCell(3, 2, 'com.ProjectK.qa.TestCases.TextBoxTest')
+data.setCell(3, 3, 4283);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validateButtonsTest')
-data.setCell(4, 2, 'com.ProjectK.qa.TestCases.ButtonsTest')
-data.setCell(4, 3, 11333);
+data.setCell(4, 1, 'dataDriventextBoxButtonTest')
+data.setCell(4, 2, 'com.ProjectK.qa.TestCases.TextBoxTest')
+data.setCell(4, 3, 286);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validateUploadDownloadTest')
-data.setCell(5, 2, 'com.ProjectK.qa.TestCases.DynamicPropertiesTest')
-data.setCell(5, 3, 11069);
+data.setCell(5, 1, 'dataDriventextBoxButtonTest')
+data.setCell(5, 2, 'com.ProjectK.qa.TestCases.TextBoxTest')
+data.setCell(5, 3, 258);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validateUploadDownloadTest')
-data.setCell(6, 2, 'com.ProjectK.qa.TestCases.UploadDownloadTest')
-data.setCell(6, 3, 9105);
+data.setCell(6, 1, 'dataDriventextBoxButtonTest')
+data.setCell(6, 2, 'com.ProjectK.qa.TestCases.TextBoxTest')
+data.setCell(6, 3, 234);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'validateRadioButtonTest')
-data.setCell(7, 2, 'com.ProjectK.qa.TestCases.RadioButtonTest')
-data.setCell(7, 3, 6075);
+data.setCell(7, 1, 'dataDriventextBoxButtonTest')
+data.setCell(7, 2, 'com.ProjectK.qa.TestCases.TextBoxTest')
+data.setCell(7, 3, 230);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'validateTextBoxButtonTest')
-data.setCell(8, 2, 'com.ProjectK.qa.TestCases.TextBoxTest')
-data.setCell(8, 3, 4292);
+data.setCell(8, 1, 'validateButtonsTest')
+data.setCell(8, 2, 'com.ProjectK.qa.TestCases.ButtonsTest')
+data.setCell(8, 3, 1);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'dataDriventextBoxButtonTest')
-data.setCell(9, 2, 'com.ProjectK.qa.TestCases.TextBoxTest')
-data.setCell(9, 3, 276);
+data.setCell(9, 1, 'validateBrokenLinksImg')
+data.setCell(9, 2, 'com.ProjectK.qa.TestCases.BrokenLinkImagesTest')
+data.setCell(9, 3, 0);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'dataDriventextBoxButtonTest')
-data.setCell(10, 2, 'com.ProjectK.qa.TestCases.TextBoxTest')
-data.setCell(10, 3, 260);
+data.setCell(10, 1, 'validateWebTablesButtonTest')
+data.setCell(10, 2, 'com.ProjectK.qa.TestCases.WebTablesTest')
+data.setCell(10, 3, 0);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'dataDriventextBoxButtonTest')
-data.setCell(11, 2, 'com.ProjectK.qa.TestCases.TextBoxTest')
-data.setCell(11, 3, 252);
+data.setCell(11, 1, 'validateLinksTest')
+data.setCell(11, 2, 'com.ProjectK.qa.TestCases.LinksTest')
+data.setCell(11, 3, 0);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'dataDriventextBoxButtonTest')
-data.setCell(12, 2, 'com.ProjectK.qa.TestCases.TextBoxTest')
-data.setCell(12, 3, 249);
+data.setCell(12, 1, 'validateRadioButtonTest')
+data.setCell(12, 2, 'com.ProjectK.qa.TestCases.RadioButtonTest')
+data.setCell(12, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -528,181 +608,195 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateTextBoxButtonTest</span>
-                <span class="method-start">11684 ms</span>
+                <span class="method-start">8717 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15977 ms</span>
+                <span class="method-start">13003 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">16228 ms</span>
+                <span class="method-start">13291 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dataDriventextBoxButtonTest(Ganesh, ganesh@gmail.com, abc, fefe)</span>
-                <span class="method-start">21547 ms</span>
+                <span class="method-start">19833 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21823 ms</span>
+                <span class="method-start">20119 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">21926 ms</span>
+                <span class="method-start">20221 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dataDriventextBoxButtonTest(Vipul, vipul@gmail.com, dsdsd, ggfs)</span>
-                <span class="method-start">26935 ms</span>
+                <span class="method-start">26361 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">27196 ms</span>
+                <span class="method-start">26595 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">27297 ms</span>
+                <span class="method-start">26697 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dataDriventextBoxButtonTest(Kajal, kajal@gmail.com, hhdjnsd, opiqm)</span>
-                <span class="method-start">33011 ms</span>
+                <span class="method-start">33300 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33260 ms</span>
+                <span class="method-start">33558 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">33365 ms</span>
+                <span class="method-start">33660 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dataDriventextBoxButtonTest(Tester1, Tester1@gmail.com, dddjeid, lqsms)</span>
-                <span class="method-start">38546 ms</span>
+                <span class="method-start">39848 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38799 ms</span>
+                <span class="method-start">40078 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ProjectK.qa.TestCases.DynamicPropertiesTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">38902 ms</span>
+                <span class="method-start">40181 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateUploadDownloadTest</span>
-                <span class="method-start">45581 ms</span>
+                <span class="method-start">46010 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">56650 ms</span>
+                <span class="method-start">57087 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ProjectK.qa.TestCases.ButtonsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">56752 ms</span>
+                <span class="method-start">57190 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateButtonsTest</span>
-                <span class="method-start">62102 ms</span>
+                <span class="method-start">87636 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">73435 ms</span>
+                <span class="method-start">87637 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ProjectK.qa.TestCases.RadioButtonTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">73537 ms</span>
+                <span class="method-start">87638 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateRadioButtonTest</span>
-                <span class="method-start">79303 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">85378 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ProjectK.qa.TestCases.WebTablesTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">85480 ms</span>
+                <span class="method-start">118052 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ProjectK.qa.TestCases.RadioButtonTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">118052 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">validateRadioButtonTest</span>
+                <span class="method-start">118052 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ProjectK.qa.TestCases.WebTablesTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">validateWebTablesButtonTest</span>
-                <span class="method-start">90782 ms</span>
+                <span class="method-start">148508 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">108611 ms</span>
+                <span class="method-start">148509 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ProjectK.qa.TestCases.LinksTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">108713 ms</span>
+                <span class="method-start">148510 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateLinksTest</span>
-                <span class="method-start">115671 ms</span>
+                <span class="method-start">178934 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">171231 ms</span>
+                <span class="method-start">178935 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ProjectK.qa.TestCases.UploadDownloadTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">171333 ms</span>
+                <span class="method-start">178935 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateUploadDownloadTest</span>
-                <span class="method-start">176617 ms</span>
+                <span class="method-start">184847 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">185722 ms</span>
+                <span class="method-start">194007 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ProjectK.qa.TestCases.BrokenLinkImagesTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">185824 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">setUp</span>
+                <span class="method-start">194109 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <span class="method-name">validateBrokenLinksImg</span>
-                <span class="method-start">191318 ms</span>
+                <span class="method-start">224586 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">223414 ms</span>
+                <span class="method-start">224586 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ProjectK.qa.TestCases.CheckBoxTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">223515 ms</span>
+                <span class="method-start">224587 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateCheckBoxButtonTest</span>
-                <span class="method-start">229801 ms</span>
+                <span class="method-start">229673 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">242056 ms</span>
+                <span class="method-start">241991 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import com.ProjectK.qa.base.TestBase;
 import com.ProjectK.qa.pages.RadioButton;
+import com.ProjectK.qa.util.JiraCreateIssue;
 
 public class RadioButtonTest extends TestBase{
 	
@@ -20,6 +21,7 @@ public class RadioButtonTest extends TestBase{
 		radioButton = new RadioButton();
 	}
 	
+	@JiraCreateIssue(isCreateIssue = true)
 	@Test(priority = 1)
 	public void validateRadioButtonTest() throws InterruptedException {
 		radioButton.validateRadioButtonOption();

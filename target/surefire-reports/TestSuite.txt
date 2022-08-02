@@ -1,17 +1,64 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 242.671 s <<< FAILURE! - in TestSuite
-validateBrokenLinksImg(com.ProjectK.qa.TestCases.BrokenLinkImagesTest)  Time elapsed: 32.097 s  <<< FAILURE!
+Tests run: 23, Failures: 5, Errors: 0, Skipped: 10, Time elapsed: 242.536 s <<< FAILURE! - in TestSuite
+setUp(com.ProjectK.qa.TestCases.ButtonsTest)  Time elapsed: 41.627 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 29.240
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'ganesh', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d97e9ad6e27dbbdf6cb748c547b5f0c, get {url=https://demoqa.com/elements}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.tjh6ee}, goog:chromeOptions: {debuggerAddress: localhost:37557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37557/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d97e9ad6e27dbbdf6cb748c547b5f0c
+	at com.ProjectK.qa.TestCases.ButtonsTest.setUp(ButtonsTest.java:19)
+
+setUp(com.ProjectK.qa.TestCases.RadioButtonTest)  Time elapsed: 30.415 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
 timeout: Timed out receiving message from renderer: 30.000
   (Session info: chrome=102.0.5005.115)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'ganesh', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '11.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5c657f88cec75178f8219ce6f280b1bc, clickElement {id=58500fff-a22f-4181-bfd5-0ce3be7ffa00}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.iO2Cnd}, goog:chromeOptions: {debuggerAddress: localhost:46679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46679/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (5c657f88cec75178f8219ce6f280b1bc)] -> xpath: //*[@id="app"]/div/div/div[2]/div[2]/div[2]/a[1]]
-Session ID: 5c657f88cec75178f8219ce6f280b1bc
-	at com.ProjectK.qa.TestCases.BrokenLinkImagesTest.validateBrokenLinksImg(BrokenLinkImagesTest.java:28)
+Command: [140d3f6095aeb07e9c16fb79dfb96ff8, get {url=https://demoqa.com/elements}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.AJQDKH}, goog:chromeOptions: {debuggerAddress: localhost:33125}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33125/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 140d3f6095aeb07e9c16fb79dfb96ff8
+	at com.ProjectK.qa.TestCases.RadioButtonTest.setUp(RadioButtonTest.java:19)
+
+setUp(com.ProjectK.qa.TestCases.WebTablesTest)  Time elapsed: 30.457 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 3.925
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'ganesh', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0c37c77874f90b33696f55793c68c92f, get {url=https://demoqa.com/elements}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.FqmlkU}, goog:chromeOptions: {debuggerAddress: localhost:32905}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:32905/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c37c77874f90b33696f55793c68c92f
+	at com.ProjectK.qa.TestCases.WebTablesTest.setUp(WebTablesTest.java:19)
+
+setUp(com.ProjectK.qa.TestCases.LinksTest)  Time elapsed: 30.426 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 28.610
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'ganesh', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9855b50338d6d7c006cd43587abfeac1, get {url=https://demoqa.com/elements}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.ChQXUe}, goog:chromeOptions: {debuggerAddress: localhost:36143}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36143/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9855b50338d6d7c006cd43587abfeac1
+	at com.ProjectK.qa.TestCases.LinksTest.setUp(LinksTest.java:20)
+
+setUp(com.ProjectK.qa.TestCases.BrokenLinkImagesTest)  Time elapsed: 39.739 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 29.152
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'ganesh', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [32d0db6d69ecdaff175c3155e70ff970, get {url=https://demoqa.com/elements}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.0wPr4G}, goog:chromeOptions: {debuggerAddress: localhost:41043}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41043/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 32d0db6d69ecdaff175c3155e70ff970
+	at com.ProjectK.qa.TestCases.BrokenLinkImagesTest.setUp(BrokenLinkImagesTest.java:21)
 

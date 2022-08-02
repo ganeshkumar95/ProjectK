@@ -3,6 +3,34 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
+      <class name="com.ProjectK.qa.TestCases.RadioButtonTest">
+        <methods>
+          <include name="validateRadioButtonTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ProjectK.qa.TestCases.RadioButtonTest -->
+      <class name="com.ProjectK.qa.TestCases.ButtonsTest">
+        <methods>
+          <include name="validateButtonsTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ProjectK.qa.TestCases.ButtonsTest -->
+      <class name="com.ProjectK.qa.TestCases.WebTablesTest">
+        <methods>
+          <include name="validateWebTablesButtonTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ProjectK.qa.TestCases.WebTablesTest -->
+      <class name="com.ProjectK.qa.TestCases.LinksTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateLinksTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ProjectK.qa.TestCases.LinksTest -->
       <class name="com.ProjectK.qa.TestCases.BrokenLinkImagesTest">
         <methods>
           <include name="validateBrokenLinksImg"/>

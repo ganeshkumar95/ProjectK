@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import com.ProjectK.qa.base.TestBase;
 import com.ProjectK.qa.pages.WebTables;
+import com.ProjectK.qa.util.JiraCreateIssue;
 
 public class WebTablesTest extends TestBase{
 
@@ -20,6 +21,7 @@ public class WebTablesTest extends TestBase{
 		webTables = new WebTables();
 	}
 	
+	@JiraCreateIssue(isCreateIssue = true)
 	@Test
 	public void validateWebTablesButtonTest() throws InterruptedException {
 		webTables.validateawebTablesOption();

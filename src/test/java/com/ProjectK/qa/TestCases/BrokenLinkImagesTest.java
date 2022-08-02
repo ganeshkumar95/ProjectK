@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import com.ProjectK.qa.base.TestBase;
 import com.ProjectK.qa.pages.BrokenLinkImages;
+import com.ProjectK.qa.util.JiraCreateIssue;
 
 public class BrokenLinkImagesTest extends TestBase{
 
@@ -22,6 +23,7 @@ public class BrokenLinkImagesTest extends TestBase{
 		brokenLinks = new BrokenLinkImages();
 	}
 	
+	@JiraCreateIssue(isCreateIssue = true)
 	@Test
 	public void validateBrokenLinksImg() throws InterruptedException {
 		brokenLinks.validateBrokenLinkOption();
