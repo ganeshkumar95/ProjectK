@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Optional;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -12,6 +13,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.DevTools;
+import org.openqa.selenium.devtools.HasDevTools;
+import org.openqa.selenium.devtools.v94.network.Network;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.OutputType;
@@ -60,6 +64,38 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get(prop.getProperty("url"));
+		
+		//using driver instance we are getting dev tools and then we are creating session.
+		DevTools devTool = ((HasDevTools) driver).getDevTools();
+		devTool.createSession();
+		
+		//Capturing Network Request and Response
+		devTool.send(Network.enable(Optional.empty(), Optional.empty(),Optional.empty()));
+
+		devTool.addListener(Network.requestWillBeSent(), requestSent -> {
+
+			System.out.println("Request URL => " + requestSent.getRequest().getUrl());
+	
+			System.out.println("Request Method => " + requestSent.getRequest().getMethod());
+	
+			System.out.println("Request Headers => " + requestSent.getRequest().getHeaders().toString());
+	
+			System.out.println("-------------------------------------------------");
+
+		});
+		devTool.addListener(Network.responseReceived(), responseReceieved -> {
+
+             System.out.println("Response Body => " + devTool.send(Network.getResponseBody(responseReceieved.getRequestId())).getBody());
+
+             System.out.println("Response Status => " + responseReceieved.getResponse().getStatus());
+
+             System.out.println("Response Headers => " + responseReceieved.getResponse().getHeaders().toString());
+
+             System.out.println("Response MIME Type => " + responseReceieved.getResponse().getMimeType().toString());
+
+             System.out.println("------------------------------------------------------");
+
+       });
 
 	}
 	

@@ -16,6 +16,7 @@
       <class name="com.ProjectK.qa.TestCases.BrokenLinkImagesTest"></class>
       <class name="com.ProjectK.qa.TestCases.UploadDownloadTest"></class>
       <class name="com.ProjectK.qa.TestCases.DynamicPropertiesTest"></class>
+     <!-- <class name="com.ProjectK.qa.TestCases.GetUsersTest"></class>-->
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->
