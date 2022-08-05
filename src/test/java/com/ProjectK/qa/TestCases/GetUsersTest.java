@@ -17,7 +17,7 @@ public class GetUsersTest extends TestBase{
 	}
 	
 	@BeforeMethod
-	public void setUp() throws Exception{
+	public void setUp(){
 		initialization();
 		getuser = new GetUsers();
 	}

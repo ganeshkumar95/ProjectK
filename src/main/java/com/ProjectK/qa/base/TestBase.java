@@ -51,7 +51,7 @@ public class TestBase {
 	
 	//browser initialization
 	@SuppressWarnings("resource")
-	public static void initialization() throws IOException {
+	public static void initialization() {
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("chrome")) {
@@ -130,8 +130,11 @@ public class TestBase {
 			   }
        });
 		
-		PrintWriter my_pw = new PrintWriter("/home/ganesh/eclipse-workspace/ProjectK/JiraAttachments/Logs.txt");
-	      BufferedReader my_br = new BufferedReader(new FileReader("/home/ganesh/eclipse-workspace/ProjectK/JiraAttachments/Logs1.txt"));
+		PrintWriter my_pw;
+		try {
+			my_pw = new PrintWriter("/home/ganesh/eclipse-workspace/ProjectK/JiraAttachments/Logs.txt");
+		
+	     BufferedReader my_br = new BufferedReader(new FileReader("/home/ganesh/eclipse-workspace/ProjectK/JiraAttachments/Logs1.txt"));
 	      String my_line = my_br.readLine();
 	      while (my_line != null) {
 	         my_pw.println(my_line);
@@ -146,7 +149,11 @@ public class TestBase {
 	      my_pw.flush();
 	      my_br.close();
 	      my_pw.close();
-
+		}
+		catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	public static void takeScreenshotAtEndOfTest(String testCaseName,WebDriver driver) throws IOException {

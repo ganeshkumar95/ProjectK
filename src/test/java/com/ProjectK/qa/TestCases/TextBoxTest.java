@@ -26,7 +26,7 @@ public class TextBoxTest extends TestBase{
 		return data;
 	}
 	@BeforeMethod
-	public void setUp() throws Exception{
+	public void setUp(){
 		initialization();
 		textBox = new TextBox();
 	}

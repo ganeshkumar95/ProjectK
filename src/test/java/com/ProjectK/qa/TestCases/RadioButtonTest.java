@@ -18,7 +18,7 @@ public class RadioButtonTest extends TestBase{
 	}
 	
 	@BeforeMethod
-	public void setUp() throws IOException {
+	public void setUp(){
 		initialization();
 		radioButton = new RadioButton();
 	}

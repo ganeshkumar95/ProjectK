@@ -19,7 +19,7 @@ DynamicProperties dynamicProperties;
 	}
 	
 	@BeforeMethod
-	public void setUp() throws IOException {
+	public void setUp(){
 		initialization();
 		dynamicProperties = new DynamicProperties();
 	}

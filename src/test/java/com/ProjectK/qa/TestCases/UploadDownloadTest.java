@@ -19,7 +19,7 @@ public class UploadDownloadTest extends TestBase{
 	}
 	
 	@BeforeMethod
-	public void setUp() throws IOException {
+	public void setUp() {
 		initialization();
 		uploadDownload = new UploadDownload();
 	}

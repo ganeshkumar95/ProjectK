@@ -18,7 +18,7 @@ public class ButtonsTest extends TestBase{
 	}
 	
 	@BeforeMethod
-	public void setUp() throws IOException {
+	public void setUp() {
 		initialization();
 		btn = new Buttons();
 	}

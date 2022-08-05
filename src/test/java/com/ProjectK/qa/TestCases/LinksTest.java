@@ -18,7 +18,7 @@ public class LinksTest extends TestBase{
 	}
 	
 	@BeforeMethod
-	public void setUp() throws IOException {
+	public void setUp() {
 		
 		initialization();
 		link = new HyperLinks();

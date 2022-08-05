@@ -16,7 +16,7 @@ public class CheckBoxTest extends TestBase{
 	}
 	
 	@BeforeMethod
-	public void setUp() throws Exception{
+	public void setUp(){
 		initialization();
 		checkBox = new CheckBox();
 	}
