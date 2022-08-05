@@ -5,6 +5,9 @@ import net.rcarz.jiraclient.Issue;
 import net.rcarz.jiraclient.Issue.FluentCreate;
 import net.rcarz.jiraclient.JiraClient;
 import net.rcarz.jiraclient.JiraException;
+
+import java.io.File;
+
 import net.rcarz.jiraclient.*;
 
 
@@ -30,6 +33,7 @@ public class JiraServiceProvider {
          Jira = new JiraClient(JiraUrl, creds);
 
          this.project = project;
+         
 
      }
 
@@ -72,6 +76,8 @@ public class JiraServiceProvider {
             System.out.println("New issue URL is :"+JiraUrl+"/browse/"+newIssue);
 
             System.out.println("*******************************************");
+            File file = new File("/home/ganesh/eclipse-workspace/ProjectK/JiraAttachments/Logs.txt");
+            newIssue.addAttachment(file);
 
         } catch (JiraException e) {
 

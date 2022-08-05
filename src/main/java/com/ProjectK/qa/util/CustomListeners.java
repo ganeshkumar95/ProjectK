@@ -53,7 +53,7 @@ public class CustomListeners extends TestBase implements ITestListener{
         //If token is not visible then create a new token and update below
 
          JiraServiceProvider JiraServiceProvider = new JiraServiceProvider("https://testmanagement.atlassian.net/",
-                    "ganesh.poojary011@gmail.com", "dMvcws4SUCFupF4Kp91e873E", "TES");
+                    "ganesh.poojary011@gmail.com", "0b0WTZ1oZ3x3gntt2e006CA1", "TES");
          String issueDescription = "Failure Reason from Automation Testing\n\n" + arg0.getThrowable().getMessage()+ "\n";
          issueDescription.concat(ExceptionUtils.getFullStackTrace(arg0.getThrowable()));
          String issueSummary = arg0.getMethod().getConstructorOrMethod().getMethod().getName()

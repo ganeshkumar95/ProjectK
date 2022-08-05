@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-05T17:18:00 IST" name="ProjectK Test Automation Suite" finished-at="2022-08-05T17:18:28 IST" duration-ms="28727">
+  <suite started-at="2022-08-05T18:36:48 IST" name="ProjectK Test Automation Suite" finished-at="2022-08-05T18:37:17 IST" duration-ms="29201">
     <groups>
     </groups>
-    <test started-at="2022-08-05T17:18:00 IST" name="ProjectK Demo QA Framework" finished-at="2022-08-05T17:18:28 IST" duration-ms="28727">
+    <test started-at="2022-08-05T18:36:48 IST" name="ProjectK Demo QA Framework" finished-at="2022-08-05T18:37:17 IST" duration-ms="29201">
       <class name="com.ProjectK.qa.TestCases.BrokenLinkImagesTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ProjectK.qa.TestCases.BrokenLinkImagesTest@72f926e6]" started-at="2022-08-05T17:18:00 IST" name="setUp" finished-at="2022-08-05T17:18:06 IST" duration-ms="6166" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ProjectK.qa.TestCases.BrokenLinkImagesTest@3c407114]" started-at="2022-08-05T18:36:48 IST" name="setUp" finished-at="2022-08-05T18:36:53 IST" duration-ms="5645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateBrokenLinksImg()[pri:0, instance:com.ProjectK.qa.TestCases.BrokenLinkImagesTest@72f926e6]" started-at="2022-08-05T17:18:06 IST" name="validateBrokenLinksImg" finished-at="2022-08-05T17:18:26 IST" duration-ms="20064" status="FAIL">
+        <test-method signature="validateBrokenLinksImg()[pri:0, instance:com.ProjectK.qa.TestCases.BrokenLinkImagesTest@3c407114]" started-at="2022-08-05T18:36:53 IST" name="validateBrokenLinksImg" finished-at="2022-08-05T18:37:13 IST" duration-ms="20073" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Broken Links - Imagess']"}
@@ -20,9 +20,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
 System info: host: 'ganesh', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-41-generic', java.version: '11.0.16'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ab4b05d1244ce40e210f7f9e2a16c943, findElement {using=xpath, value=//span[text()='Broken Links - Imagess']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.sqkVTK}, goog:chromeOptions: {debuggerAddress: localhost:38865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38865/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ab4b05d1244ce40e210f7f9e2a16c943]]>
+Command: [e11f7bed8b58de697fcff98a3ed22ab0, findElement {using=xpath, value=//span[text()='Broken Links - Imagess']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.dTnSVo}, goog:chromeOptions: {debuggerAddress: localhost:33573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33573/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e11f7bed8b58de697fcff98a3ed22ab0]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Broken Links - Imagess']"}
@@ -31,9 +31,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
 System info: host: 'ganesh', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-41-generic', java.version: '11.0.16'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ab4b05d1244ce40e210f7f9e2a16c943, findElement {using=xpath, value=//span[text()='Broken Links - Imagess']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.sqkVTK}, goog:chromeOptions: {debuggerAddress: localhost:38865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38865/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ab4b05d1244ce40e210f7f9e2a16c943
+Command: [e11f7bed8b58de697fcff98a3ed22ab0, findElement {using=xpath, value=//span[text()='Broken Links - Imagess']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /tmp/.com.google.Chrome.dTnSVo}, goog:chromeOptions: {debuggerAddress: localhost:33573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33573/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e11f7bed8b58de697fcff98a3ed22ab0
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -53,7 +53,7 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at com.sun.proxy.$Proxy20.click(Unknown Source)
 at com.ProjectK.qa.pages.BrokenLinkImages.validateBrokenLinkOption(BrokenLinkImages.java:26)
-at com.ProjectK.qa.TestCases.BrokenLinkImagesTest.validateBrokenLinksImg(BrokenLinkImagesTest.java:29)
+at com.ProjectK.qa.TestCases.BrokenLinkImagesTest.validateBrokenLinksImg(BrokenLinkImagesTest.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,7 +88,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateBrokenLinksImg -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ProjectK.qa.TestCases.BrokenLinkImagesTest@72f926e6]" started-at="2022-08-05T17:18:28 IST" name="tearDown" finished-at="2022-08-05T17:18:28 IST" duration-ms="70" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ProjectK.qa.TestCases.BrokenLinkImagesTest@3c407114]" started-at="2022-08-05T18:37:17 IST" name="tearDown" finished-at="2022-08-05T18:37:17 IST" duration-ms="74" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

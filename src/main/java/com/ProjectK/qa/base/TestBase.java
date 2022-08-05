@@ -1,9 +1,16 @@
 package com.ProjectK.qa.base;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.time.Duration;
 import java.util.Optional;
 import java.util.Properties;
@@ -43,7 +50,8 @@ public class TestBase {
 	}
 	
 	//browser initialization
-	public static void initialization() {
+	@SuppressWarnings("resource")
+	public static void initialization() throws IOException {
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("chrome")) {
@@ -76,31 +84,68 @@ public class TestBase {
 		//A listener is added to listen to all the requests made by the application. 
     	//For each request captured by the application we then extract the URL,HTTP Method and headers.
 		devTool.addListener(Network.requestWillBeSent(), requestSent -> {
+			try {
+			      //create an print writer for writing to a file
+			      PrintStream out = new PrintStream("/home/ganesh/eclipse-workspace/ProjectK/JiraAttachments/Logs1.txt");
+			      System.setOut(out);
+			      System.out.println("Request URL => " + requestSent.getRequest().getUrl());
+			  	
+			      System.out.println("Request Method => " + requestSent.getRequest().getMethod());
+			
+				  System.out.println("Request Headers => " + requestSent.getRequest().getHeaders().toString());
+			
+				  System.out.println("-------------------------------------------------");
 
-			System.out.println("Request URL => " + requestSent.getRequest().getUrl());
-	
-			System.out.println("Request Method => " + requestSent.getRequest().getMethod());
-	
-			System.out.println("Request Headers => " + requestSent.getRequest().getHeaders().toString());
-	
-			System.out.println("-------------------------------------------------");
+			      //close the file (VERY IMPORTANT!)
+			      out.close();
+			   }
+			      catch(IOException e1) {
+			        System.out.println("Error during reading/writing");
+			   }
 
 		});
 		//A listener is added to listen to all the response made by the application. 
     	//For each response captured by the application we then extract the Response Body, Status, and Headers.
 		devTool.addListener(Network.responseReceived(), responseReceieved -> {
+			
+			try {
+			     
+			      //create an print writer for writing to a file
+			      PrintStream out = new PrintStream("/home/ganesh/eclipse-workspace/ProjectK/JiraAttachments/Logs2.txt");
+			      System.setOut(out);
 
-             System.out.println("Response Body => " + devTool.send(Network.getResponseBody(responseReceieved.getRequestId())).getBody());
+			      System.out.println("Response Body => " + devTool.send(Network.getResponseBody(responseReceieved.getRequestId())).getBody());
 
-             System.out.println("Response Status => " + responseReceieved.getResponse().getStatus());
+			      System.out.println("Response Status => " + responseReceieved.getResponse().getStatus());
 
-             System.out.println("Response Headers => " + responseReceieved.getResponse().getHeaders().toString());
+			      System.out.println("Response Headers => " + responseReceieved.getResponse().getHeaders().toString());
 
-             System.out.println("Response MIME Type => " + responseReceieved.getResponse().getMimeType().toString());
+			      System.out.println("Response MIME Type => " + responseReceieved.getResponse().getMimeType().toString());
 
-             System.out.println("------------------------------------------------------");
-
+			      System.out.println("------------------------------------------------------");
+			      out.close();
+			   }
+			      catch(IOException e1) {
+			        System.out.println("Error during reading/writing");
+			   }
        });
+		
+		PrintWriter my_pw = new PrintWriter("/home/ganesh/eclipse-workspace/ProjectK/JiraAttachments/Logs.txt");
+	      BufferedReader my_br = new BufferedReader(new FileReader("/home/ganesh/eclipse-workspace/ProjectK/JiraAttachments/Logs1.txt"));
+	      String my_line = my_br.readLine();
+	      while (my_line != null) {
+	         my_pw.println(my_line);
+	         my_line = my_br.readLine();
+	      }
+	      my_br = new BufferedReader(new FileReader("/home/ganesh/eclipse-workspace/ProjectK/JiraAttachments/Logs2.txt"));
+	      my_line = my_br.readLine();
+	      while(my_line != null) {
+	         my_pw.println(my_line);
+	         my_line = my_br.readLine();
+	      }
+	      my_pw.flush();
+	      my_br.close();
+	      my_pw.close();
 
 	}
 	
