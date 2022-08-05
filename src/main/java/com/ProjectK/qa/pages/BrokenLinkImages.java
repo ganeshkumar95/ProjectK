@@ -9,7 +9,7 @@ import com.ProjectK.qa.base.TestBase;
 public class BrokenLinkImages extends TestBase{
 
 	//Initialization
-	@FindBy(xpath="//span[text()='Broken Links - Images']")
+	@FindBy(xpath="//span[text()='Broken Links - Imagess']")
 	WebElement brokenLinkOption;
 	
 	@FindBy(xpath="//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/a[1]")

@@ -70,8 +70,11 @@ public class TestBase {
 		devTool.createSession();
 		
 		//Capturing Network Request and Response
+		//we invoke the send() method to enable the Network
 		devTool.send(Network.enable(Optional.empty(), Optional.empty(),Optional.empty()));
-
+		
+		//A listener is added to listen to all the requests made by the application. 
+    	//For each request captured by the application we then extract the URL,HTTP Method and headers.
 		devTool.addListener(Network.requestWillBeSent(), requestSent -> {
 
 			System.out.println("Request URL => " + requestSent.getRequest().getUrl());
@@ -83,6 +86,8 @@ public class TestBase {
 			System.out.println("-------------------------------------------------");
 
 		});
+		//A listener is added to listen to all the response made by the application. 
+    	//For each response captured by the application we then extract the Response Body, Status, and Headers.
 		devTool.addListener(Network.responseReceived(), responseReceieved -> {
 
              System.out.println("Response Body => " + devTool.send(Network.getResponseBody(responseReceieved.getRequestId())).getBody());

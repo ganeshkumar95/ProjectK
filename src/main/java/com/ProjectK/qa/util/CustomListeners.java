@@ -49,9 +49,11 @@ public class CustomListeners extends TestBase implements ITestListener{
 		//API token copy from Jira dashboard ex: lorelimpusm12uijk
 		
 		//Project key should be, Short name ex: BS	
+        //In case JIRA issue creation fails check for API Token in JIRA Account Setting under Security tab.
+        //If token is not visible then create a new token and update below
 
          JiraServiceProvider JiraServiceProvider = new JiraServiceProvider("https://testmanagement.atlassian.net/",
-                    "ganesh.poojary011@gmail.com", "fbaivSbtrc4P0SVdlDcIB719", "TES");
+                    "ganesh.poojary011@gmail.com", "dMvcws4SUCFupF4Kp91e873E", "TES");
          String issueDescription = "Failure Reason from Automation Testing\n\n" + arg0.getThrowable().getMessage()+ "\n";
          issueDescription.concat(ExceptionUtils.getFullStackTrace(arg0.getThrowable()));
          String issueSummary = arg0.getMethod().getConstructorOrMethod().getMethod().getName()

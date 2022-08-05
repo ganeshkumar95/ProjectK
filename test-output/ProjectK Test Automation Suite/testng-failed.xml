@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="ProjectK Demo QA Framework(failed)">
     <classes>
-      <class name="com.ProjectK.qa.TestCases.RadioButtonTest">
+      <class name="com.ProjectK.qa.TestCases.BrokenLinkImagesTest">
         <methods>
-          <include name="validateRadioButtonTest"/>
-          <include name="setUp"/>
+          <include name="validateBrokenLinksImg"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.ProjectK.qa.TestCases.RadioButtonTest -->
+      </class> <!-- com.ProjectK.qa.TestCases.BrokenLinkImagesTest -->
     </classes>
   </test> <!-- ProjectK Demo QA Framework(failed) -->
 </suite> <!-- Failed suite [ProjectK Test Automation Suite] -->

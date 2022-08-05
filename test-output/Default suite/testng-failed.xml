@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ProjectK.qa.TestCases.CheckBoxTest">
+      <class name="com.ProjectK.qa.TestCases.BrokenLinkImagesTest">
         <methods>
-          <include name="validateCheckBoxButtonTest"/>
+          <include name="validateBrokenLinksImg"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.ProjectK.qa.TestCases.CheckBoxTest -->
+      </class> <!-- com.ProjectK.qa.TestCases.BrokenLinkImagesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
